@@ -1,0 +1,97 @@
+package com.example.project3customtoastwithseperateclass;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+    Button btn_CToast;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btn_CToast= findViewById(R.id.btn_CToast);
+        btn_CToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        }
+        );
+
+        Log.i("CASA", "onCreate()");
+
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Log.i("CASA", "onStart()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Log.i("CASA", "onResume()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Log.i("CASA", "onPause()");
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        Log.i("CASA", "onStop()");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        Log.i("CASA", "onRestart()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Log.i("CASA", "onDestroy()");
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+
+        Log.i("CASA", "finish()");
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        Log.i("CASA", "onSave()");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        Log.i("CASA", "onRestore()");
+    }
+}
